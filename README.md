@@ -51,14 +51,14 @@ pip install -r requirements.txt
 ```bash
 python -m textblob.download_corpora
 
-5. **Usage:
+## Usage
   .Run the main script to analyze sentiment:
 
-  ```bash
-    python sentiment_analysis.py
+```bash
+python sentiment_analysis.py
   .Enter any sentence or review when prompted, and the tool will output the sentiment classification.
 
-**How It Works**
+## How It Works
 .The tool uses TextBlob’s polarity score, which ranges from -1 (very negative) to 1 (very positive).
 .Based on the polarity:
   Polarity > 0 → Positive sentiment
@@ -67,7 +67,7 @@ python -m textblob.download_corpora
   
   Polarity = 0 → Neutral sentiment
 
-**Future Improvements**
+## Future Improvements
     Add GUI with Tkinter or Streamlit.
     
     Support batch analysis of multiple sentences or files.
