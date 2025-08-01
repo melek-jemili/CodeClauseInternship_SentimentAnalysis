@@ -32,7 +32,7 @@ The tool allows users to input sentences or reviews and get an immediate sentime
 git clone https://github.com/melek-jemili/CodeClauseInternship_SentimentAnalysis
 cd CodeClauseInternship_SentimentAnalysis
 
-2. **Create and activate a Python virtual environment:
+2. **Create and activate a Python virtual environment:**
 
 ```bash
 python -m venv venv
@@ -41,28 +41,33 @@ venv\Scripts\activate
 # macOS/Linux
 source venv/bin/activate
 
-3. **Install dependencies:
+3. **Install dependencies:**
 
 ```bash
 pip install -r requirements.txt
 
-4. **Download TextBlob corpora:
+4. **Download TextBlob corpora:**
 
 ```bash
 python -m textblob.download_corpora
 
 ---
 ## Usage
-  .Run the main script to analyze sentiment:
+
+.Run the main script to analyze sentiment:
 
 ```bash
 python sentiment_analysis.py
-  .Enter any sentence or review when prompted, and the tool will output the sentiment classification.
+
+.Enter any sentence or review when prompted, and the tool will output the sentiment classification.
 
 ---
 ## How It Works
+
 .The tool uses TextBlob’s polarity score, which ranges from -1 (very negative) to 1 (very positive).
+
 .Based on the polarity:
+
   Polarity > 0 → Positive sentiment
   
   Polarity < 0 → Negative sentiment
@@ -71,6 +76,7 @@ python sentiment_analysis.py
 
 ---
 ## Future Improvements
+
     Add GUI with Tkinter or Streamlit.
     
     Support batch analysis of multiple sentences or files.
@@ -79,5 +85,7 @@ python sentiment_analysis.py
     
     Add sentiment score output and confidence levels.
 ---
-**License**
+
+## License
+
 This project is licensed under the MIT License. See the LICENSE file for details.
