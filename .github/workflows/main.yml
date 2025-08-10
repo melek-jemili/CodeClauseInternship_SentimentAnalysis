@@ -26,5 +26,6 @@ jobs:
           python -m textblob.download_corpora
 
       - name: Run sentiment analysis script
+      
         run: |
-          python project.py <<< "I love this project!"
+          python CodeClauseInternship_SentimentAnalysis/project.py <<< "I love this project!"
