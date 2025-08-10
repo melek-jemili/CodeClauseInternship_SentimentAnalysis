@@ -2,9 +2,9 @@ name: Sentiment Analysis CI
 
 on:
   push:
-    branches: [ "main" , "master" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "main" , "master" ]
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -22,9 +22,9 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; else pip install textblob; fi
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; else pip install textblob nltk; fi
           python -m textblob.download_corpora
 
       - name: Run sentiment analysis script
         run: |
-          python project.py
+          python project.py <<< "I love this project!"
