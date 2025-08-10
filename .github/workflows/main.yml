@@ -27,4 +27,4 @@ jobs:
 
       - name: Run sentiment analysis script
         run: |
-          python sentiment_analysis.py <<< "I love this project!"
+          python project.py <<< "I love this project!"
